@@ -86,3 +86,6 @@ ENV/
 
 # customized files
 universe/sector/
+
+# database file
+db/*
