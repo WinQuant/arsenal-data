@@ -41,6 +41,7 @@ import data.api.base as base
 from data.config import *
 from data.driver import mongodb
 from data.driver import mysql
+from data.driver import sqlite3
 
 import util.calendar as uc
 
@@ -51,12 +52,12 @@ RIC_EXCHANGE_CODE     = { 'XSHG': 'SH',
 DATAYES_EXCHANGE_CODE = { 'SH': 'XSHG',
                           'SZ': 'XSHE' }
 
-DEFAULT_START_DATE = dt.date( 2012, 1, 1 )
+DEFAULT_START_DATE = dt.date( 2016, 1, 4 )
 
-TICK_DEFAULT_START_DATE = '20150101'
+TICK_DEFAULT_START_DATE = '20160104'
 TICK_DATE_FORMAT        = '%Y%m%d'
 
-WIND_DEFAULT_START_DATE = '20120101'
+WIND_DEFAULT_START_DATE = '20160104'
 WIND_DATE_FORMAT        = '%Y%m%d'
 
 # @functools.lru_cache( maxsize=32 )

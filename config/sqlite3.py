@@ -1,8 +1,12 @@
-'''Facade for the configuration.
+'''This script contains all configuration related to SQLite3 access including
+
+* database path
+* ...
+
 '''
 
 '''
-Copyright (c) 2017, WinQuant Information and Technology Co. Ltd.
+Copyright (c) 2019, WinQuant Information and Technology Co. Ltd.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -28,7 +32,5 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 '''
 
-# from .datayes import *
-# from .mongodb import *
-# from .mysql   import *
-from .sqlite3 import *
+DAILY_DATA_DB = "data/db/kline-6.db"
+EXRIGHT_FACTORS = "data/db/security_exright_ratio.csv"
